@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        
+        <title>MOKEPON</title>
+        <script src="js/mokepon.js"></script>
+        <link rel="stylesheet" href="./styles.css">
+    
+    </head>
+    <body>
+
+        <section id = "seleccionar-mascota">
+            <h1 class="titulo">MOKEPON</h1>
+
+            <h2>Elige tu mascota:</h2>
+
+            <div class="tarjetas">
+                <input type="radio" name="mascota" id="Volcanix"/>
+                <label class="tarjeta-mokepon" for="Volcanix">
+                    <p>Volcanix</p>
+                    <img src="./assets/volcanix.jpg" alt="Volcanix">
+                </label>
+                <input type="radio" name="mascota" id="Terracota"/>
+                <label class="tarjeta-mokepon" for="Terracota">
+                    <p>Terracota</p>
+                    <img src="./assets/terracota.jpg" alt="Terracota">
+                </label>
+                <input type="radio" name="mascota" id="Aguamar"/>
+                <label class="tarjeta-mokepon" for="Aguamar">
+                    <p>Aguamar</p>
+                    <img src="./assets/aguamar.jpg" alt="Aguamar">
+                </label> 
+                <!-- <input type="radio" name="mascota" id="Lavamonte"/>
+                <label class="tarjeta-mokepon" for="Lavamonte">Lavamonte 🔥+🌿</label>
+                <input type="radio" name="mascota" id="Vaporiz"/>
+                <label class="tarjeta-mokepon" for="Vaporiz">Vaporiz 💧+🔥</label>
+                <input type="radio" name="mascota" id="Lodozal"/>
+                <label class="tarjeta-mokepon" for="Lodozal">Lodozal 🌿+💧</label>  -->
+            </div>
+
+        <!-- "input" permite crear un cuadro en la pagina que permine a los usuarios escribir, 
+              hay varios tipos de input, como el tipo text y el tipo number;
+              el input de tipo "radio" crea un circulo que sirve para seleccionar.
+              El (name="mascota") crea un grupo para los "radio" y asi,
+              cuando selecciono una segunda opcion, se elimina la seleccion del primero.
+              
+             "label" nos permite indicar al usuario lo que está seleccionando, y su atributo "for" me permite vincularlo con un input -->
+
+            <!-- Volcánix -> Fuego
+            Terracota -> Tierra
+            Aguamar -> Agua
+            Lavamonte -> Fuego + Tierra
+            Vaporiz -> Fuego + Agua
+            Lodozal -> Tierra + Agua -->
+
+            <button id="boton-mascota">Seleccionar Mascota</button>
+        </section>
+
+        <section id = "seleccionar-ataque">
+            <h1 class="titulo">MOKEPON</h1>
+
+            <h2>Elige tu ataque:</h2>
+            <p>
+                <button id="boton-fuego">Fuego 🔥</button>
+                <button id="boton-agua">Agua 💧</button>
+                <button id="boton-tierra">Tierra 🌿</button>
+
+            <p>Tu mascota <span id="mascota-jugador"></span> tiene <span id = "vidas-jugador">3</span> vidas</p>
+            <p>La mascota del enemigo <span id="mascota-enemigo"></span> tiene <span id = "vidas-enemigo">3</span> vidas</p>
+            <!-- la etiqueta "span" hace que lo que está envolviendo sea dinamico y lo pueda cambiar en un futuro con javaScript -->
+            </p>
+        </section>
+
+        <section id = "mensajes">
+            <!-- <p>Tu mascota atacó con FUEGO, La mascota enemiga atacó con AGUA, GANASTE🏆</p> -->
+        </section>
+
+        <section id ="reiniciar">
+            <button id="boton-reinicio">REINICIAR</button>
+        </section>
+
+    </body>
+    </html>

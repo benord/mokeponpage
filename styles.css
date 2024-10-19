@@ -1,0 +1,61 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Lobster&family=Sixtyfour+Convergence&display=swap');
+
+body{
+    background-color: #77CDFF;
+    font-family: "Lobster", sans-serif;
+    font-size: 20px;
+}
+
+.titulo {
+    font-family: "Sixtyfour Convergence", sans-serif;
+    font-size: 40px;   
+}
+/* para llamar a la clase y cambiar su estilo hay que poner un punto y el nombre de la clase*/
+/* en caso de que fuera un id, en lugar de el punto se pondria un "#" */
+
+#seleccionar-mascota{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjetas{
+    display: flex;
+}
+
+.tarjeta-mokepon {
+    width: 170px;
+    height: 100px;
+    background: #0D92F4;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    color: red;
+    align-content: center;
+}
+
+/* box-sizing: border-box; sirve para que al agregar el padding o margin no altere el tamaño de la caja, sino que se adapte al tamaño que le dimos a la tarjeta inicialmente */
+
+.tarjeta-mokepon img{
+    width: 80px;
+}
+
+#boton-mascota{
+    color: aqua;
+    background-color: blue;
+    width: 100px;
+    height: 40px;
+    box-sizing: border-box;
+    margin: 3px;
+    border: 1px solid gray;
+}
+
+input{
+    display: none;
+}
